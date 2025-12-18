@@ -5,7 +5,6 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import "./TimelinePage.css";
-
 export default function TimelinePage() {
   const [activeImage, setActiveImage] = useState(null);
 
@@ -20,8 +19,7 @@ export default function TimelinePage() {
         "Currently pursuing a bachelor's degree with a strong focus on machine learning, computer vision, and data-driven system design. CGPA: 8.59.",
       tags: ["AIDS", "SDE"],
       image:
-        "https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg?auto=compress&cs=tinysrgb&w=800",
-    },
+        require ('../images/vit.png'),},
     {
       year: "2025",
       type: "achievement",
@@ -31,8 +29,7 @@ export default function TimelinePage() {
       description:
         "Secured third place in a global AI innovation challenge by developing an impactful AI-based solution evaluated by industry experts.",
       tags: ["Global Recognition", "Hackathon"],
-      image:
-        "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: require ('../images/te-award.jpeg'),
     },
     {
       year: "2024",
@@ -43,11 +40,10 @@ export default function TimelinePage() {
       description:
         "Won first place for developing a technology-driven solution addressing real-world challenges through innovation and teamwork.",
       tags: ["Hackathon", "Innovation", "Teamwork"],
-      image:
-        "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800",
-    },
-    {
-      year: "2022",
+      image: require ('../images/isa-pune-award.jpeg'),
+        },
+            {
+      year: "2023",
       type: "education",
       icon: GraduationCap,
       title: "Diploma in Computer Engineering",
@@ -55,9 +51,54 @@ export default function TimelinePage() {
       description:
         "Graduated with distinction, building strong foundations in programming, databases, and software engineering.",
       tags: ["Computer Engineering", "Programming"],
-      image:
-        "https://images.pexels.com/photos/1595391/pexels-photo-1595391.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: require ('../images/agppi.jpeg'),
     },
+         {
+      year: "2023",
+      type: "achievement",
+      icon: Trophy,
+      title: "Second Prize – Paper Presentation",
+      organization: "AGPPI Annum 2K24",
+      description:
+        "Secured second prize for presenting a technical research paper, recognized for clarity, innovation, and practical relevance.",
+      tags: ["Research", "Paper Presentation"],
+      image: require ('../images/annum.jpg'),
+    },
+    {
+      year: "2023",
+      type: "achievement",
+      icon: Trophy,
+      title: "First Prize – State Level Paper Presentation",
+      organization: "TechnoBlast 2023",
+      description:
+        "Awarded first prize for a technical research paper presented at a state-level academic competition.",
+      tags: ["Research", "Presentation"],
+      image:
+        require ('../images/blast.jpg'),
+    },
+    {
+      year: "2023",
+      type: "achievement",
+      icon: Trophy,
+      title: "First Prize – State Level Paper Presentation",
+      organization: "TechnoSprint 2023",
+      description:
+        "Awarded first prize for a technical research paper presented at a state-level academic competition.",
+      tags: ["Research", "Presentation"],
+      image: require ('../images/sprintaward.jpg'),
+    },
+
+    {
+      year: "2020",
+      type: "education",
+      icon: GraduationCap,
+      title: "10th Grade (ICSE)",
+      organization: "ST Thomas English Medium School, Solapur",
+      description:
+        "Completed secondary education with a strong academic record and early interest in computing.",
+      tags: ["Computer", "Programming"],
+      image: require ('../images/stems.jpeg'),
+        },
   ];
 
   return (
