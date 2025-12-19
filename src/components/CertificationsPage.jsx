@@ -82,7 +82,7 @@ export default function CertificationsPage() {
       venue: "IEEE COMP-SIF",
       year: "2025",
       description:
-        "A scalable computer vision pipeline leveraging OpenCV and NASA APIs to estimate rooftop solar potential for sustainable energy planning.",
+         "An intelligent geospatial portal combining satellite imagery and deep learning to assess rooftop solar feasibility for urban energy planning",
       tags: ["Computer Vision", "Sustainability", "IEEE"],
       links: {
         pdf: "https://doi.org/10.1109/COMP-SIF65618.2025.10969963",
@@ -407,4 +407,5 @@ export default function CertificationsPage() {
     </div>
     </BackgroundLayout>
   );
+
 }
