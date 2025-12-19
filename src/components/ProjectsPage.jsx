@@ -54,7 +54,7 @@ export default function ProjectsPage() {
           <span>PORTFOLIO</span>
         </a>
 
-        <a href="/resume.pdf" download className="resume-btn">
+        <a href={require("../images/resume.pdf")} download className="resume-btn">
           <Download size={16} />
           <span>Resume</span>
         </a>
