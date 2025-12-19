@@ -1,6 +1,6 @@
 import { ArrowLeft, Github, Download } from "lucide-react";
 import "./ProjectsPage.css";
-
+import BackgroundLayout from "../layouts/BackgroundLayout.jsx";
 export default function ProjectsPage() {
   const projects = [
     {
@@ -46,6 +46,7 @@ export default function ProjectsPage() {
   ];
 
   return (
+    <BackgroundLayout>
     <div className="projects-page">
       {/* Header */}
       <header className="projects-header">
@@ -54,7 +55,7 @@ export default function ProjectsPage() {
           <span>PORTFOLIO</span>
         </a>
 
-        <a href={require("../images/resume.pdf")} download className="resume-btn">
+        <a href="/resume.pdf" download className="resume-btn">
           <Download size={16} />
           <span>Resume</span>
         </a>
@@ -120,5 +121,6 @@ export default function ProjectsPage() {
         </div>
       </main>
     </div>
+    </BackgroundLayout>
   );
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import { ArrowLeft, Award, FileText, ExternalLink } from "lucide-react";
+import BackgroundLayout from "../layouts/BackgroundLayout";
 
 export default function CertificationsPage() {
   const isDark = true;
@@ -107,9 +108,7 @@ export default function CertificationsPage() {
       width: '100%',
       fontFamily: "'Inter', sans-serif",
       color: isDark ? '#ffffff' : '#111827',
-      background: isDark 
-        ? 'linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)'
-        : 'linear-gradient(135deg, #f8f9fa 0%, #e9ecef 50%, #dee2e6 100%)',
+      background: 'transparent',
     },
     header: {
       position: 'absolute',
@@ -283,6 +282,7 @@ export default function CertificationsPage() {
   `;
 
   return (
+    <BackgroundLayout>
     <div style={styles.container}>
       <style>{mediaStyles}</style>
 
@@ -294,8 +294,19 @@ export default function CertificationsPage() {
         </a>
       </header>
 
+     
+
+
       {/* Content */}
       <div style={styles.content}>
+         <div className="section-indicator">
+            <span className="section-number">02</span>
+            <div>
+              <span className="section-label">Credentials</span>
+              <div className="section-line" />
+            </div>
+          </div>
+
         <h1 style={styles.mainHeading} className="main-heading">
           Certifications & Publications
         </h1>
@@ -394,5 +405,6 @@ export default function CertificationsPage() {
         </section>
       </div>
     </div>
+    </BackgroundLayout>
   );
 }

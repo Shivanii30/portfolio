@@ -1,5 +1,6 @@
 import React from "react";
 import { ArrowLeft, ExternalLink, Download } from "lucide-react";
+import BackgroundLayout from "../layouts/BackgroundLayout";
 
 export default function MenuPage() {
   const isDark = true;
@@ -16,7 +17,7 @@ export default function MenuPage() {
       number: "02",
       title: "Credentials",
       subtitle: "Certificates & Publications",
-      href: "/about",
+      href: "/certifications",
       description: "My work",
     },
     {
@@ -28,10 +29,10 @@ export default function MenuPage() {
     },
     {
       number: "04",
-      title: "Timeline",
+      title: "Edcuation",
       subtitle: "My journey",
       href: "/timeline",
-      description: "Education & achievements",
+      description: "Academics & achievements",
     },
   ];
 
@@ -40,10 +41,11 @@ export default function MenuPage() {
       minHeight: '100vh',
       width: '100%',
       fontFamily: "'Inter', sans-serif",
-      color: isDark ? '#ffffff' : '#111827',
-      background: isDark 
-        ? 'linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)'
-        : 'linear-gradient(135deg, #f8f9fa 0%, #e9ecef 50%, #dee2e6 100%)',
+      color: '#ffffff',
+      background: 'transparent',
+      overflowX: 'hidden',
+      position: 'relative',
+      caretColor: 'transparent'
     },
     header: {
       position: 'absolute',
@@ -127,7 +129,7 @@ export default function MenuPage() {
     },
     navCard: {
       position: 'relative',
-      background: isDark ? 'rgba(255, 255, 255, 0.1)' : 'rgba(0, 0, 0, 0.05)',
+     background: isDark ? 'rgba(255, 255, 255, 0.1)' : 'rgba(0, 0, 0, 0.05)',
       border: isDark ? '1px solid rgba(255, 255, 255, 0.2)' : '1px solid rgba(0, 0, 0, 0.1)',
       borderRadius: '0.5rem',
       padding: '1.5rem',
@@ -206,7 +208,7 @@ export default function MenuPage() {
       alignItems: 'center',
       gap: '0.5rem',
       background: isDark ? '#ffffff' : '#1f2937',
-      color: isDark ? '#000000' : '#ffffff',
+      color: isDark ? '#bd6c74ff' : '#ffffff',
       padding: '0.75rem 1.5rem',
       borderRadius: '0.5rem',
       fontWeight: '500',
@@ -357,6 +359,7 @@ export default function MenuPage() {
   `;
 
   return (
+    <BackgroundLayout>
     <div style={styles.container}>
       <style>{mediaStyles}</style>
 
@@ -465,5 +468,6 @@ export default function MenuPage() {
         </div>
       </div>
     </div>
+    </BackgroundLayout>
   );
 }
